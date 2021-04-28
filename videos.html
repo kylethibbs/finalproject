@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="images/mustard.png" type="image/png" sizes="16x16">
+
+        <!-- Important code for slicknav -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+        </script>
+
+
+        <title>Quinn XCII Sample Videos</title>
+
+    </head>
+
+    <body>
+
+        <header class="clearfix" id = "topPage">
+            <a href = "index.html"><img src = "images/logo.png" alt = "Quinn XCII logo"></a>
+            <h2><a href = "index.html">Quinn XCII</a></h2>
+            
+        </header>
+
+        <nav id ="mobilemenu"></nav>
+        <nav id ="nav_menu">
+            <ul>
+                <li>
+                    <a href = "index.html">Home</a>
+                </li>
+                <li>
+                    <a href = "imagegallery.html">Image Gallery</a>
+                </li>
+                <li>
+                    <a href = "videos.html">Sample Videos</a>
+                </li>
+            </ul>
+        </nav>
+        
+
+        
+        <nav class = "bookmarks">
+            <ul>
+                <li>
+                    <a href = "#vid1">My Wife and Two Dogs</a>
+                </li>
+                <li>
+                    <a href = "#vid2">Another Day in Paradise</a>
+                </li>
+                <li>
+                    <a href = "#vid3">Always Been You</a>
+                </li>
+                <li>
+                    <a href = "#vid4">Straightjacket</a>
+                </li>
+                <li>
+                    <a href = "#vid5">Hey, Goodbye</a>
+                </li>
+                <li id = "myBtn">
+                    <a href = "#topPage">Go to Top</a>
+                </li>
+            </ul>
+        </nav>
+        
+
+        <main class = "videoGal">
+            <article id = "vid1">
+                <h2>
+                    My Wife and Two Dogs- Music Video
+                </h2>
+                <div class = "video">
+                    <iframe src="https://www.youtube.com/embed/39JUn7mBLts" title="My Wife and Two Dogs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Artist: Quinn XCII <br>
+                    Albumn: Change of Scenery II <br>                    
+                    Year: 2021 <br>
+                </p>
+            </article>
+
+            <article id = "vid2">
+                <h2>
+                    Another Day in Paradise- Music Video
+                </h2>
+                <div class = "video">
+                    <iframe src="https://www.youtube.com/embed/eKMRPb1RTEc" title="Another Day in Paradise" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Artist: Quinn XCII <br>
+                    Albumn: Change of Scenery <br>                    
+                    Year: 2015 <br>
+                </p>
+            </article>
+
+            <article id = "vid3">
+                <h2>
+                    Always Been You- Music Video
+                </h2>
+                <div class = "video">
+                    <iframe src="https://www.youtube.com/embed/dKdjp7voNk4" title="Always Been You" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Artist: Quinn XCII <br>
+                    Albumn: The Story of Us <br>                    
+                    Year: 2017 <br>
+                </p>
+            </article>
+
+            <article id = "vid4">
+                <h2>
+                    Straightjacket- Music Video
+                </h2>
+                <div class = "video">
+                    <iframe src="https://www.youtube.com/embed/MAXvS5nfBJo" title="Straightjacket" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Artist: Quinn XCII <br>
+                    Albumn: The Story of Us<br>                    
+                    Year: 2017 <br>
+                </p>
+            </article>
+            
+            <article id = "vid5">
+                <h2>
+                    Hey, Goodbye- Music Video
+                </h2>
+                <div class = "video">
+                    <iframe src="https://www.youtube.com/embed/ZqmmFtZtSjc" title="Hey Goodbye" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Artist: Quinn XCII <br>
+                    Albumn: Change of Scenery II <br>                    
+                    Year: 2021 <br>
+                </p>
+            </article>
+           
+            
+        </main>
+
+        <footer>
+            <p>&copy; <span id = "year"></span> Kyle Thibodeaux</p>
+        </footer>
+
+
+    </body>
+</html>
+
+<script>
+    var date = new Date();
+    var year = date.getFullYear();
+
+    document.getElementById("year").innerHTML = year;
+</script>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+

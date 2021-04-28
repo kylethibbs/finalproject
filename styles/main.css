@@ -1,0 +1,534 @@
+/* the styles for the elements */
+
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+									UNIVERSAL SELECTOR
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+											CLEARFIX
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+											ELEMENTS
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+html{
+	background-image: url("../images/background.jpg");
+	background-attachment: fixed;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width:100%;
+	margin:0 auto;
+	background-color: none;
+
+}
+
+header{
+	border-bottom:10px double #E1AD01;
+	padding-top: .5em;
+	padding-bottom:.5em;
+	background-image: linear-gradient(30deg,#008080 50%,#FFFFFF 100%);
+
+}
+
+header img{
+	margin: 1em 2em;
+	float: left;
+	max-width: 100px;
+	min-width: 50px;
+	width: 10%;
+
+}
+
+header h2{
+	margin: .7em auto;
+} 
+
+header h2 a{
+	font-family: 'Lobster', cursive;
+	color: #E1AD01;
+	font-weight: bold;
+	margin: .7em auto;
+	font-size: 400%;
+	text-decoration:none ;
+	text-shadow: 2px 2px 2px black;
+}
+
+/* main{
+	width: 75%;
+	float:left;
+} */
+
+article{
+	/* clear: top; */
+	float: left;
+	width:100%;
+	padding:2em auto;
+	margin: 1em auto;
+	background-image: linear-gradient(30deg,#008080 50%,#FFFFFF 100%);
+	border-radius: 10px 50px 10px 50px;
+	border: 5px solid #E1AD01;
+	box-shadow: 0px 0px 10px 2px #008080;
+}
+
+article h1{
+	font-family: 'Lobster', cursive;
+	text-align: left;
+	margin:.5em;
+	text-shadow:  1px 1px 0px #E1AD01;
+	color: black;
+	font-size: 300%;
+}
+
+article h2{
+	font-family: 'Lobster', cursive;
+	text-align: left;
+	margin:.5em;
+	text-shadow:  2px 2px 2px black;
+	color: #E1AD01;
+	font-size: 150%;
+}
+
+article p{
+	font-family: 'Amatic SC', cursive;
+	text-align: left;
+	margin:.2em 3em;
+	color:#E1AD01;
+	font-size: 200%;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bold;
+}
+
+footer p{
+	text-align: center;
+	padding:1em 0em;
+}
+
+footer{
+	clear:both;
+	background-color: rgb(0, 131, 122);
+	border: 3px solid rgb(0, 131, 122);
+	font-family: 'Lobster',cursive;
+	color: #E1AD01;
+	border-top: 10px double #E1AD01;
+	margin-top: 1em;
+
+	
+}
+
+button {
+    display: block;
+    background-color: #008080;
+    border: 1px solid #E1AD01;
+    color: #E1AD01;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 1em auto;
+    font-family: 'Amatic SC', cursive;
+    width: 10%;
+    text-align: center;
+}
+
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+												LINKS
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+header h2 a:link{
+	color: none;
+}
+
+header h2 a:visited{
+	color: none;
+}
+
+header h2 a:hover{
+	color: none;
+}
+
+header h2 a:active{
+	color: none;
+}
+
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+												CLASSES
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+.regularParagraph{
+	color:black;
+	text-shadow: none;
+	
+}
+
+.shadow{
+	text-shadow: 2px 2px #800000;
+}
+
+.doubleBorder{
+	background-color: white;
+	border: 3px double maroon;
+	padding-left: 20px;
+	font-size: 120%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 2px black;
+	width: 70%;
+	
+}
+
+.video{
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+}
+
+.video iframe{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	}
+
+	/* Create four equal columns that sits next to each other */
+.column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.imageGal{
+	width: 100%;
+}
+
+.videoGal{
+		width: 75%;
+		float:left;
+}
+
+.mainPage{
+	width:75%;
+	float:left;
+}
+
+.solidBack{
+	background-color: #008080 ;
+	background-image: none;
+}
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+											NAV MENU
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+.bookmarks{
+	float: left;
+	width: 20%;
+	position:sticky;
+	top:100px;
+	clear:both;
+}
+
+.bookmarks ul{
+	list-style: none;
+	margin: 2em;
+	padding:0em;
+	
+}
+
+.bookmarks ul li {
+	float:none;
+	
+}
+
+.bookmarks ul li a{
+	padding: .5em .5em;
+    display: block;
+    background-color: #008080;
+    border: 1px solid #E1AD01;
+    color: #E1AD01;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 0;
+	margin-bottom: 1em;
+    transition: all .5s;
+	font-family: 'Amatic SC', cursive;
+	width: 75%;
+	text-align: center;
+}
+
+
+.bookmarks ul li a:hover{
+	display:block;
+	margin-left: 1em;
+	
+
+}
+
+.bookmarks #myBtn{
+	display: none;
+}
+
+
+
+#nav_menu ul{
+	list-style: none;
+	margin:0;
+	padding:0em;
+	
+}
+
+#nav_menu ul li {
+	float:left;
+	width: 33.33%;
+	
+}
+
+#nav_menu ul li a{
+	padding: .5em .5em;
+    display: block;
+    background-color: #008080;
+    color: #E1AD01;
+    font-weight: bolder;
+    text-decoration: none;
+	font-family: 'Amatic SC', cursive;
+	width: 100%;
+	text-align: center;
+}
+
+
+#nav_menu ul li a:hover{
+	display:block;
+	background-color: #E1AD01;
+	color:#008080;
+}
+
+#nav_menu #myBtn{
+	display: none;
+}
+
+.slicknav_menu{
+	background-color: #008080 !important;
+}
+
+.slicknav_btn{
+	background-color: #E1AD01 !important;
+}
+
+.slicknav_menutxt{
+	color: black !important;
+	font-size: 150% !important;
+	font-family: 'Amatic SC', cursive !important;
+	text-shadow: none !important;
+}
+
+.slicknav_icon-bar{
+	background-color: black !important;
+}
+
+.slicknav_icon{
+	margin-top: .5em !important;
+}
+
+.slicknav_nav a{
+	color:black !important;
+	font-family: 'Lobster', cursive !important;
+	font-weight: bolder;
+	border-top: 1px solid #E1AD01;
+}
+
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+												ID
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+#mobilemenu{
+	display:none;
+}
+
+#printButton{
+	margin-top: 1em;
+	padding:.1em .2em;
+}
+
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+											SLICKNAV MENU
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+
+
+
+
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************
+
+										MEDIA QUEREYS
+
+*****************************************************************************************************
+*****************************************************************************************************
+****************************************************************************************************/
+@media only screen and (max-width: 959px) {
+
+	header h2{
+		margin:1em auto;
+	}
+
+	header h2 a{
+		font-size: 300%;
+		
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	header img{
+		float: none;
+		max-width: 40px;
+		margin:0;
+	}
+
+	header{
+		text-align: center;
+	}
+
+	header h2{
+		margin: 0 auto;
+	}
+
+	header h2 a{
+		font-size: 200%;
+	}
+
+	section{
+		float: none;
+		padding: 0 3%;
+		width:94%;
+	}
+
+
+	.bookmarks ul li a{
+		display:none;
+	}
+	.bookmarks{
+		display: none;
+	}
+
+	.videoGal{
+		width: 98%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.mainPage{
+		width: 98%;
+		clear:top;
+		float:none;
+		margin: 0 auto;
+	}
+
+	.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+	
+	#mobilemenu{
+		display: block;
+	}
+
+	#nav_menu ul li a{
+		display:none;
+	}
+
+}
+
+@media only screen and (max-width: 479px) {
+	body{
+		font-size: 75%;
+	}
+
+	.bookmarks ul li a{
+		display:none;
+	}
+
+	article{
+		width: 98%;
+	}
+
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/mustard.png" type="image/png" sizes="16x16">
+
+    <!-- Important code for slicknav -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    });
+    </script>
+
+    <title>Quinn XCII Image Gallery</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="clearfix" id = "topPage">
+        <a href = "index.html"><img src = "images/logo.png" alt = "Quinn XCII logo"></a>
+        <h2><a href = "index.html">Quinn XCII</a></h2>
+        
+    </header>
+
+    <nav id = "mobilemenu"></nav>
+    <nav id ="nav_menu">
+        <ul>
+            <li>
+                <a href = "index.html">Home</a>
+            </li>
+            <li>
+                <a href = "imagegallery.html">Image Gallery</a>
+            </li>
+            <li>
+                <a href = "videos.html">Sample Videos</a>
+            </li>
+        </ul>
+    </nav>
+    
+
+
+    <main class = "imageGal">
+        <!-- Photo Grid -->
+        <div class="row"> 
+            <div class="column">
+                <img src="images/quinn1.jpeg" >
+                <img src="images/quinn9.jpg" >
+                <img src="images/quinn13.jpg" >
+                <img src="images/quinn7.jpg" >
+                <img src="images/quinn21.jpg" >
+                <img src="images/quinn5.jpg" >
+                
+            </div>
+            <div class="column">
+                <img src="images/quinn2.png" >
+                <img src="images/quinn10.png" >
+                <img src="images/quinn14.jpg" >
+                <img src="images/quinn24.jpg" >
+                <img src="images/quinn22.jpg" >
+                <img src="images/quinn6.jpg" >
+                
+            </div>  
+            <div class="column">
+                <img src="images/quinn3.jpg" >
+                <img src="images/quinn11.jpg" >
+                <img src="images/quinn15.jpg" >
+                <img src="images/quinn19.jpg" >
+                <img src="images/quinn23.jpg" >
+                <img src="images/quinn20.jpg" >
+                
+            </div>
+            <div class="column">
+                <img src="images/quinn4.jpg" >
+                <img src="images/quinn12.png" >
+                <img src="images/quinn16.jpg" >
+                <img src="images/quinn17.jpeg" >
+                <img src="images/quinn8.jpg" >
+                
+            </div>
+        </div>
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top of Page</button>
+    <footer>
+        <p>&copy; <span id = "year"></span> Kyle Thibodeaux</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    var date = new Date();
+    var year = date.getFullYear();
+
+    document.getElementById("year").innerHTML = year;
+</script>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
