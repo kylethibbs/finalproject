@@ -44,28 +44,28 @@ html{
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Secular One', sans-serif;
     font-size: 100%;
 	width:100%;
 	margin:0 auto;
 	background-color: none;
+	background-image: linear-gradient(0deg,  #ffffff 0%,  #5a5a5a 75%,#5a5a5a 100%);
 
 }
 
 header{
-	border-bottom:10px double #E1AD01;
 	padding-top: .5em;
 	padding-bottom:.5em;
-	background-image: linear-gradient(30deg,#008080 50%,#FFFFFF 100%);
+	background-image: linear-gradient(0deg,#5a5a5a  5%, #FFFFFF 100%);
 
 }
 
 header img{
-	margin: 1em 2em;
+	margin: 0 2em;
 	float: left;
-	max-width: 100px;
+	max-width: 125px;
 	min-width: 50px;
-	width: 10%;
+	width: 15%;
 
 }
 
@@ -74,90 +74,52 @@ header h2{
 } 
 
 header h2 a{
-	font-family: 'Lobster', cursive;
-	color: #E1AD01;
+	font-family: 'Merienda', cursive;
+	color: #ebc23e;
 	font-weight: bold;
 	margin: .7em auto;
-	font-size: 400%;
+	font-size: 200%;
 	text-decoration:none ;
 	text-shadow: 2px 2px 2px black;
 }
 
-/* main{
-	width: 75%;
-	float:left;
-} */
+main{
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+} 
 
-article{
-	/* clear: top; */
-	float: left;
-	width:100%;
-	padding:2em auto;
-	margin: 1em auto;
-	background-image: linear-gradient(30deg,#008080 50%,#FFFFFF 100%);
-	border-radius: 10px 50px 10px 50px;
-	border: 5px solid #E1AD01;
-	box-shadow: 0px 0px 10px 2px #008080;
-}
 
-article h1{
-	font-family: 'Lobster', cursive;
-	text-align: left;
-	margin:.5em;
-	text-shadow:  1px 1px 0px #E1AD01;
-	color: black;
-	font-size: 300%;
-}
-
-article h2{
-	font-family: 'Lobster', cursive;
-	text-align: left;
-	margin:.5em;
-	text-shadow:  2px 2px 2px black;
-	color: #E1AD01;
-	font-size: 150%;
-}
-
-article p{
-	font-family: 'Amatic SC', cursive;
-	text-align: left;
-	margin:.2em 3em;
-	color:#E1AD01;
-	font-size: 200%;
-	text-shadow: 1px 1px 1px black;
-	font-weight: bold;
-}
 
 footer p{
 	text-align: center;
-	padding:1em 0em;
+	padding:.5em 0em;
 }
 
 footer{
 	clear:both;
-	background-color: rgb(0, 131, 122);
-	border: 3px solid rgb(0, 131, 122);
-	font-family: 'Lobster',cursive;
-	color: #E1AD01;
-	border-top: 10px double #E1AD01;
+	background-color: #5a5a5a;
+	font-family: 'Merienda',cursive;
+	color: #ebc23e;
 	margin-top: 1em;
-
-	
+	/* border-top: 1px solid black; */
 }
 
 button {
     display: block;
     background-color: #008080;
-    border: 1px solid #E1AD01;
-    color: #E1AD01;
+    border: 1px solid #ebc23e;
+    color: #ebc23e;
     font-weight: bolder;
     text-decoration: none;
     border-radius: 5px;
     margin: 1em auto;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Secular One', sans-serif;
     width: 10%;
     text-align: center;
 }
+
+
 
 /****************************************************************************************************
 *****************************************************************************************************
@@ -182,6 +144,24 @@ header h2 a:hover{
 
 header h2 a:active{
 	color: none;
+}
+
+footer p a{
+	text-decoration: underline;
+	color: #ebc23e;
+}
+
+footer p a:hover{
+	color: black;
+}
+footer p a:link{
+	color: #ebc23e;
+}
+footer p a:active{
+	color: #ebc23e;
+}
+footer p a:visited{
+	color: #ebc23e;
 }
 
 /****************************************************************************************************
@@ -263,13 +243,40 @@ header h2 a:active{
 }
 
 .mainPage{
-	width:75%;
-	float:left;
+	width:100%;
+	margin: 0 auto;
+	clear: both;
 }
 
 .solidBack{
-	background-color: #008080 ;
+	background-color: none ;
 	background-image: none;
+}
+
+.successImg{
+	width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
+.mainParagraph{
+	margin-top: 1em;
+	padding: 0 5em;
+	width: 50%;
+	float: left;
+	text-align:center;
+	font-family: 'Secular One', sans-serif;
+}
+
+.mapLocation{
+	width: 50%;
+	margin: 0 auto;
+	height: 650px;
+	border: 5px black solid;
+}
+.mapLocation iframe{
+	width: 100%;
+	height: 100%;
 }
 /****************************************************************************************************
 *****************************************************************************************************
@@ -304,15 +311,15 @@ header h2 a:active{
 	padding: .5em .5em;
     display: block;
     background-color: #008080;
-    border: 1px solid #E1AD01;
-    color: #E1AD01;
+    border: 1px solid #ebc23e;
+    color: #ebc23e;
     font-weight: bolder;
     text-decoration: none;
     border-radius: 5px;
     margin-left: 0;
 	margin-bottom: 1em;
     transition: all .5s;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Secular One', sans-serif;
 	width: 75%;
 	text-align: center;
 }
@@ -329,7 +336,11 @@ header h2 a:active{
 	display: none;
 }
 
+#nav_menu{
+	position: sticky;
+	top:0px;
 
+}
 
 #nav_menu ul{
 	list-style: none;
@@ -340,7 +351,7 @@ header h2 a:active{
 
 #nav_menu ul li {
 	float:left;
-	width: 33.33%;
+	width: 20%;
 	
 }
 
@@ -348,19 +359,23 @@ header h2 a:active{
 	padding: .5em .5em;
     display: block;
     background-color: #008080;
-    color: #E1AD01;
+    color: #ebc23e;
     font-weight: bolder;
     text-decoration: none;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Secular One', sans-serif;
 	width: 100%;
 	text-align: center;
+	background-image: linear-gradient(0deg,  rgb(39, 39, 39), black, rgb(39, 39, 39));
+	margin-bottom: 1em;
+	transition: 500ms;
 }
 
 
 #nav_menu ul li a:hover{
 	display:block;
-	background-color: #E1AD01;
-	color:#008080;
+	background-image: linear-gradient(0deg, black, rgb(39, 39, 39), black);
+	color: white;
+	margin-top: .3em;
 }
 
 #nav_menu #myBtn{
@@ -372,13 +387,13 @@ header h2 a:active{
 }
 
 .slicknav_btn{
-	background-color: #E1AD01 !important;
+	background-color: #ebc23e !important;
 }
 
 .slicknav_menutxt{
 	color: black !important;
 	font-size: 150% !important;
-	font-family: 'Amatic SC', cursive !important;
+	font-family: 'Secular One', sans-serif !important;
 	text-shadow: none !important;
 }
 
@@ -392,9 +407,9 @@ header h2 a:active{
 
 .slicknav_nav a{
 	color:black !important;
-	font-family: 'Lobster', cursive !important;
+	font-family: 'Merienda', cursive !important;
 	font-weight: bolder;
-	border-top: 1px solid #E1AD01;
+	border-top: 1px solid #ebc23e;
 }
 
 /****************************************************************************************************
@@ -415,17 +430,54 @@ header h2 a:active{
 	padding:.1em .2em;
 }
 
+#headerImage{
+	max-width: 20%;
+	min-width: 10%;
+	float: left;
+}
+
 /****************************************************************************************************
 *****************************************************************************************************
 *****************************************************************************************************
 
-											SLICKNAV MENU
+											Fade in image
 
 *****************************************************************************************************
 *****************************************************************************************************
 ****************************************************************************************************/
 
+.fade-in-image {
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
 
+  @keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
 
 
 /****************************************************************************************************
