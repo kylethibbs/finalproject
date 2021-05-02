@@ -39,7 +39,6 @@
 *****************************************************************************************************
 ****************************************************************************************************/
 html{
-	background-image: url("../images/background.jpg");
 	background-attachment: fixed;
 }
 
@@ -48,7 +47,6 @@ body {
     font-size: 100%;
 	width:100%;
 	margin:0 auto;
-	background-color: none;
 	background-image: linear-gradient(0deg,  #ffffff 0%,  #5a5a5a 75%,#5a5a5a 100%);
 
 }
@@ -57,6 +55,8 @@ header{
 	padding-top: .5em;
 	padding-bottom:.5em;
 	background-image: linear-gradient(0deg,#5a5a5a  5%, #FFFFFF 100%);
+	position: sticky;
+	top: 0;
 
 }
 
@@ -261,11 +261,15 @@ footer p a:visited{
 
 .mainParagraph{
 	margin-top: 1em;
-	padding: 0 5em;
-	width: 50%;
+	padding: 0 25%;
+	width: 100%;
 	float: left;
 	text-align:center;
 	font-family: 'Secular One', sans-serif;
+}
+
+.regularParagraph{
+	font-weight:50;
 }
 
 .mapLocation{
@@ -278,6 +282,32 @@ footer p a:visited{
 	width: 100%;
 	height: 100%;
 }
+
+.firstNav{
+	border-radius:10px 0 0 10px;
+}
+.lastNav{
+	border-radius:0px 10px 10px 0px;
+}
+
+.graphics{
+	width: 33.33%;
+	float: left;
+	margin: 2em 0em;
+	padding: 0 0;
+}
+
+.graphics img{
+	clear: both;
+	margin: 0 30%;
+	box-shadow: 0px 20px 20px 3px black;
+	width: 40%;
+}
+
+.graphics img:hover{
+	box-shadow: none;
+}
+
 /****************************************************************************************************
 *****************************************************************************************************
 *****************************************************************************************************
@@ -337,8 +367,12 @@ footer p a:visited{
 }
 
 #nav_menu{
+	clear:both;
+	width: 75%;
+	margin: 0 auto;
 	position: sticky;
-	top:0px;
+	top: 127px;
+
 
 }
 
@@ -346,7 +380,6 @@ footer p a:visited{
 	list-style: none;
 	margin:0;
 	padding:0em;
-	
 }
 
 #nav_menu ul li {
@@ -367,6 +400,7 @@ footer p a:visited{
 	text-align: center;
 	background-image: linear-gradient(0deg,  rgb(39, 39, 39), black, rgb(39, 39, 39));
 	margin-bottom: 1em;
+	font-weight: 100;
 	transition: 500ms;
 }
 
@@ -375,7 +409,6 @@ footer p a:visited{
 	display:block;
 	background-image: linear-gradient(0deg, black, rgb(39, 39, 39), black);
 	color: white;
-	margin-top: .3em;
 }
 
 #nav_menu #myBtn{
@@ -447,11 +480,11 @@ footer p a:visited{
 ****************************************************************************************************/
 
 .fade-in-image {
-	animation: fadeIn 5s;
-	-webkit-animation: fadeIn 5s;
-	-moz-animation: fadeIn 5s;
-	-o-animation: fadeIn 5s;
-	-ms-animation: fadeIn 5s;
+	animation: fadeIn 2s;
+	-webkit-animation: fadeIn 2s;
+	-moz-animation: fadeIn 2s;
+	-o-animation: fadeIn 2s;
+	-ms-animation: fadeIn 2s;
 }
 
   @keyframes fadeIn {
